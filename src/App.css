@@ -40,11 +40,12 @@
 nav {
   display: flex;
   justify-content: space-around;
-  border: 2px solid black
+  border: 2px solid black;
 }
 
 #produceCard {
   padding: 40px;
+  text-align: center;
 }
 #produceCard img{
   width: 250px;
@@ -52,8 +53,26 @@ nav {
   border-radius: 100px;
 }
 
-#shop {
+#rendPro{
   padding: 25px;
   display: grid;
   grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+#search {
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+#search > * {
+  margin: 5px;
+  font-size: 20px;
+}
+#shop h2{
+  text-align: center;
 }
