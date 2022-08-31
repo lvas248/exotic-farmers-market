@@ -1,0 +1,130 @@
+{
+    "produce": [
+      {
+        "id": 1,
+        "name": "Fuji Apple",
+        "type": "fruit",
+        "price": 1,
+        "description": "Fuji apples are crisp and very juicy with a sugary-sweet flavor that resembles freshly-pressed apple juice. The interior of the apple boasts firm, creamy-white flesh that is fine-grained. Fuji apples store well, which makes them a great treat, all year long.",
+        "image": "https://st2.depositphotos.com/44031892/44318/i/450/depositphotos_443181588-stock-photo-fuji-apple-harvest-picking-season.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Guava",
+        "type": "fruit",
+        "price": 2,
+        "description": "The fruits are round to pear-shaped and measure up to 7.6 cm in diameter; their pulp contains many small hard seeds (more abundant in wild forms than in cultivated varieties). The fruit has a yellow skin and white, yellow, or pink flesh. The musky, at times pungent, odour of the sweet pulp is not always appreciated.",
+        "image": "http://static6.depositphotos.com/1065622/557/i/450/depositphotos_5576391-Fresh-Guava-fruit-with-leaves-on-white-background.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Tamarind",
+        "type": "fruit",
+        "price": 3,
+        "description": "Tamarind is a sweet and sour fruit that grows in pods. Inside, they contain large seeds covered in a dark, sticky pulp. The pulp of the fruit is eaten raw and has a similar texture to dates and figs",
+        "image": "http://st.depositphotos.com/1801979/4034/i/450/depositphotos_40348101-fruit-tamarind-in-the-market.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Orange",
+        "type": "fruit",
+        "price": 1,
+        "description": "The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp. The edible part of the orange is the flesh, consumed in fresh or in juice. The orange is also used to make stewed fruit, jams, for consumption as dehydrated fruit, etc.",
+        "image": "https://st4.depositphotos.com/24424066/27402/i/450/depositphotos_274029596-stock-photo-valencia-orange-in-the-market.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Raspberries",
+        "type": "fruit",
+        "price": 4,
+        "description": "A small, deep colored berry which has a tender texture, a sweet delicate taste and a pleasant aroma. Peak season for raspberries is during the middle of summer, but they are available year-round in some markets as both fresh and frozen. The most common and most cultivated variety is the red Raspberry.",
+        "image": "http://st.depositphotos.com/1000141/2563/i/450/depositphotos_25634007-Ripe-raspberry-with-leaf.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Watermelon",
+        "type": "fruit",
+        "price": 2,
+        "description": "This melon is a succulent fruit and vinelike plant of the gourd family (Cucurbitaceae), native to tropical Africa and cultivated around the world. The fruit contains vitamin A and some vitamin C and is usually eaten raw. The rind is sometimes preserved as a pickle.",
+        "image": "http://st2.depositphotos.com/3855973/6698/i/450/depositphotos_66989647-Heap-of-watermelons-for-sale.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Cherries",
+        "price": 5,
+        "type": "fruit",
+        "description": "Ripe cherries are deep red and exquisitely sweet, with small inedible pits. Cherry is an almost universally loved flavor, from cherry danishes and cherry lollipops to the cherry on top of a hot fudge sundae.",
+        "image": "https://cdn.barnimages.com/wp-content/uploads/2018/04/20171226-barnimages-008-770x513.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Sweet Potatoes",
+        "price": 2,
+        "type": "veggie",
+        "description": "Sweet potatoes are the root of a vine in the morning glory family and native to Central America or South America. Sweet potatoes are now grown in warm, moderate climates across the globe, including in Asia, North America, South America, and Africa. The root is cooked before eaten and can be baked, fried, toasted, steamed, boiled, grilled, and more.",
+        "image": "http://st2.depositphotos.com/1692343/5318/i/450/depositphotos_53188533-Organic-Raw-Sweet-Potatoes.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Starfruit",
+        "price": 6,
+        "type": "fruit",
+        "description": "Star fruit — or carambola — is a sweet and sour fruit that has the shape of a five-point star. The skin is edible and the flesh has a mild, sour flavor that makes it popular in a number of dishes. The star fruit is yellow or green in color.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9_SCkb4LyZqLBcx3j1g14mCoZSCxoLF3KHj4Sh-M-dRL9KMPGEpo8InvNHDiEDTdHaHU&usqp=CAU"
+      },
+      {
+        "id": 10,
+        "name": "Cherimoya",
+        "price": 10,
+        "type": "fruit",
+        "description": "The flavor is a heady mix of banana and pineapple with perhaps a little strawberry and kiwi thrown in. Its fruity taste is light and refreshing, but the creamy, custardy texture is also comforting to eat. Like a homemade pudding made virtuous — that's the beauty of the cherimoya.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4FbAczH9sapqaJtx0EwVSao3HyGU1i3JfzRPkJzE6ScA6B3-XJQXWFHMPoA&s"
+      },
+      {
+        "id": 11,
+        "name": "Pummelo",
+        "price": 40,
+        "type": "fruit",
+        "description": "Covered with a thick, easy-to-peel rind that ranges in color from yellow to pink, the Pummelo contains a pink flesh. The juicy flesh is sweet in flavor and can be enjoyed like a grapefruit.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Pomelo_fruit.jpg/800px-Pomelo_fruit.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Papaya",
+        "type": "fruit",
+        "price": 3,
+        "description": "Papaya is a tropical fruit, having oval or pear shape, measuring between 10 and 20cm and usually weighing between 500 and 1,000g, although it may even weigh up to 5kg. It is a berry of thin skin, of a green yellowish and orange colour. The pulp is of a red orange or yellow colour, sweet and very juicy.",
+        "image": "https://images.pexels.com/photos/5945739/pexels-photo-5945739.jpeg?auto=compress&cs=tinysrgb&w=800"
+      }
+    ],
+    "suggestions": [
+      {
+        "name": "Kiwi",
+        "image": "https://images.unsplash.com/photo-1584209742773-f7b461564449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8a2l3aXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+        "desc": "",
+        "likes": 9,
+        "id": 1
+      },
+      {
+        "name": "Mangosteen",
+        "image": "https://images.unsplash.com/photo-1627998398537-0cbff2cee742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuZ29zdGVlbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+        "desc": "",
+        "likes": 5,
+        "id": 2
+      },
+      {
+        "name": "Yuca",
+        "image": "https://media.istockphoto.com/photos/fresh-yuca-on-market-stall-picture-id1156632936?b=1&k=20&m=1156632936&s=170667a&w=0&h=N0X332Q3auoC-BqGGAPzMjbTHYKlrXYfysomT2T8PFU=",
+        "desc": "Yuca, commonly known as cassava or manioc (not to be confused with yucca), is one of the world's most versatile vegetables. Use it fried, boiled, or mashed, yuca is a nutty-flavored starch tuber native to South America that is also found in Asia and parts of Africa.",
+        "likes": 2,
+        "id": 3
+      },
+      {
+        "name": "Durian fruit",
+        "image": "https://images.unsplash.com/photo-1623312087025-016a988d14c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZHVyaWFuJTIwZnJ1aXR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+        "desc": "The fruit is spherical and 15 to 20 cm (6 to 8 inches) in diameter. It has a hard external husk, or shell, covered with stout spines and contains five oval compartments, each filled with a cream-coloured pulp in which are embedded one to five chestnut-sized seeds.",
+        "likes": 1,
+        "id": 4
+      }
+    ]
+  }
