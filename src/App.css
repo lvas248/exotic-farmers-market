@@ -76,3 +76,23 @@ nav {
 #shop h2{
   text-align: center;
 }
+
+#produceDisplayPage {
+  text-align: center;
+}
+#produceDisplayPage > * {
+  margin: 25px;
+}
+
+#produceDisplayPage p{
+  width: 60%;
+  margin: auto;
+}
+
+#produceDisplayPage input{
+  width: 20px;
+}
+#produceDisplayPage img {
+  width: 400px;
+  height: 400px;
+}
