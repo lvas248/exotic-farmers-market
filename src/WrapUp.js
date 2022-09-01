@@ -1,8 +1,28 @@
 import React, { useState } from 'react'
 
 function WrapUp({cart}){
-    
-    const [ userInfo, setUserInfo ] = useState({name:"", pickUpDate: "", pickUpTime: "", notes: "", cart: cart, totalCost:""})
+    //State for userInfo
+    const [ userInfo, setUserInfo ] = useState({name:"", pickUpDate: "", pickUpTime: "", notes: "", cart: cart, totalCost: totalPrice})
+
+    const totalPrice = cart.reduce( (total, element) =>{
+        return total + (element.price * element.weight)
+    }, 0 )
+
+
+
+    //Pick up date render -> next five days
+    const today = new Date()
+    const fiveDayArray = ["Select Date"]
+
+    for( let i=1; i<=5; i++){
+        const day = new Date(today)
+        day.setDate(day.getDate() + i)
+       const formattedDay =  day.toString().split(' ').splice(0,3).join(' ')
+        fiveDayArray.push(formattedDay)
+    }
+    const renderOptions = fiveDayArray.map( day =>{
+        return <option key={day} value={day}>{day}</option>
+    })
 
   
     return(
@@ -15,8 +35,8 @@ function WrapUp({cart}){
                 </div>
                 <div>
                     <label>Pick Up Date</label>
-                    <select>
-                        {/* {renderOptions}                         */}
+                    <select value={userInfo.pickUpDate} onChange={e => setUserInfo({...userInfo, pickUpDate: e.target.value})}>
+                        {renderOptions}                        
                     </select>
                 </div>
                 <div>
