@@ -2,18 +2,19 @@ import React, { useState } from 'react'
 
 function CartItem({lineItem, updateCart}){
 
+//Edit Button state & functionality
     const [ btnClick, setBtnClick ] = useState(false)
     function handleEdit(){
         setBtnClick(!btnClick)
     }
-    
+    //controlled form for user edits
     const [ updatedWeight, setUpdatedWeight ] = useState(lineItem.weight)
     function handleChange(e){
         setUpdatedWeight(e.target.value)
     }
 
     function handleUpdate(){
-        const updatedObj = {...lineItem, qty: updatedWeight}
+        const updatedObj = {...lineItem, weight: updatedWeight}
         updateCart(updatedObj)
         setBtnClick(!btnClick)
     }
