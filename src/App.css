@@ -75,3 +75,40 @@ thead, .total{
 table{
   margin: 20px auto;
 }
+
+#suggest {
+  display: grid;
+  text-align: center;
+}
+
+#suggest > * {
+  margin: 40px;
+}
+#suggest img {
+  width: 400px;
+  height: 400px;
+}
+#suggest p{
+  width: 60%;
+  margin: 40px auto;
+}
+#SuggestionCard {
+  padding: 40px;
+}
+#suggestionContainer{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#suggestionForm {
+  display: flex;
+  flex-direction: column;
+}
+#suggestionForm input {
+  width:60%;
+  margin: 10px auto;
+}
+
+#suggestionForm button {
+  width: 60px;
+  margin: auto;
+}
