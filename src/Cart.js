@@ -13,6 +13,18 @@ function Cart({cart, updateCart}){
         return total + (item.weight * item.price)
     }, 0)
 
+//When Continue button clicked, redirect to Shop Component    
+    const history = useHistory()
+    function continueShopping(){
+        history.push('/')
+    }
+
+//When button is clicked, redirect to WrapUp Component
+    const wrapHistory = useHistory()
+    function handleWrapUp(){
+        wrapHistory.push('/wrap-up')
+    }
+
     //RenderLineItems
     const renderLineItems = cart.map( item =>{
         return <CartItem key={item.name} updateCart={updateCart} lineItem={item}/>
@@ -49,6 +61,8 @@ function Cart({cart, updateCart}){
         <div id="cart">
              <h2>Shopping Cart</h2>
             {cart.length > 0? table: <p>Shopping Cart is empty</p>}
+            <button onClick={continueShopping}>Continue Shopping</button>
+            <button onClick={handleWrapUp}>Wrap Up</button>
         </div>
     )
 }
