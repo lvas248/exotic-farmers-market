@@ -1,16 +1,19 @@
 import React, { useState } from 'react'
 
 function WrapUp({cart}){
-    //State for userInfo
-    const [ userInfo, setUserInfo ] = useState({name:"", pickUpDate: "", pickUpTime: "", notes: "", cart: cart, totalCost: totalPrice})
 
     const totalPrice = cart.reduce( (total, element) =>{
         return total + (element.price * element.weight)
-    }, 0 )
+    }, 0 )    
+
+        //State for userInfo
+    const [ userInfo, setUserInfo ] = useState({name:"", pickUpDate: "", pickUpTime: "", notes: "", cart: cart, totalCost: totalPrice})
 
 
 
-    //Pick up date render -> next five days
+
+
+    //pickUpDate render -> next five days
     const today = new Date()
     const fiveDayArray = ["Select Date"]
 
@@ -24,11 +27,26 @@ function WrapUp({cart}){
         return <option key={day} value={day}>{day}</option>
     })
 
+    //pickUpTime render
+    const pickUpTimeRender = ["Select Pick Up Time", "Morning: 10a-12p", "Evening: 4p-6p"].map(time => <option key={time} value={time}>{time}</option>)
+
+    function handleSubmit(){
+        console.log(userInfo)
+        fetch('http://localhost:3000/orders',{
+            method: "POST",
+            headers: {
+                "Content-type":"application/json",
+            },
+            body: JSON.stringify(userInfo)
+        })
+        .then(res=> res.json())
+        .then(data => console.log(data))
+    }
   
     return(
         <div id="wrapUp">
             <h1>Pick Up Details</h1>
-            <form type="submit">
+            <form type="submit" onSubmit={handleSubmit}>
                 <div>
                     <label>Name: </label>
                     <input type="text" value={userInfo.name} onChange={e => setUserInfo({...userInfo, name: e.target.value})}></input>
@@ -42,8 +60,7 @@ function WrapUp({cart}){
                 <div>
                 <label>Pick up time</label>  
                     <select value={userInfo.pickUpTime} onChange={e => setUserInfo({...userInfo, pickUpTime: e.target.value})}>
-                        <option>Morning: 10a-12p</option>
-                        <option>Evening: 4p-6p</option>
+                        {pickUpTimeRender}
                     </select>
                 </div>
                 <div>
