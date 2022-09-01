@@ -33,6 +33,15 @@ function DisplaySection(){
     //if not in cart, add to cart
     else setCart([...cart, orderObj])
     }
+
+    function updateCart(obj){
+        const updatedCart = cart.map( item =>{
+          if( item.name === obj.name) return obj
+          else return item
+        })
+    
+        setCart(updatedCart)
+    }
     
 
     return (
@@ -49,7 +58,7 @@ function DisplaySection(){
                 </Route>
 
                 <Route path="/cart">
-                    <Cart />
+                    <Cart cart={cart}/>
                 </Route>
 
                 <Route path="/produce-display-page/:produceName">
