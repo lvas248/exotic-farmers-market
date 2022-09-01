@@ -39,10 +39,11 @@ function DisplaySection(){
           if( item.name === obj.name) return obj
           else return item
         })
-    
         setCart(updatedCart)
     }
-    
+    function clearCart(){
+        setCart([])
+    }
 
     return (
         <div id="displaySection">
@@ -58,7 +59,7 @@ function DisplaySection(){
                 </Route>
 
                 <Route path="/cart">
-                    <Cart cart={cart}/>
+                    <Cart cart={cart} updateCart={updateCart}/>
                 </Route>
 
                 <Route path="/produce-display-page/:produceName">
@@ -66,7 +67,7 @@ function DisplaySection(){
                 </Route>
 
                 <Route path="/wrap-up">
-                    <WrapUp />
+                    <WrapUp cart={cart} clearCart={clearCart}/>
                 </Route>
 
             </Switch>
