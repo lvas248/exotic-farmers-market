@@ -1,4 +1,4 @@
-import SuggestedProduceCard from "./SuggestedProduceCard"
+// import SuggestedProduceCard from "./SuggestedProduceCard"
 
 function Suggest(){
 
