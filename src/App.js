@@ -2,24 +2,39 @@
 import './App.css';
 import Nav from "./Nav"
 import Shop from "./Shop.js"
-import AddProduce from "./AddProduce.js"
+import AddProduce from './AddProduce';
 import Cart from "./Cart"
 import ProduceDisplayPage from "./ProduceDisplayPage"
 import WrapUp from "./WrapUp.js"
 import { Switch, Route } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 function App() {
 
   const [ selectedProduceItem, setSelectedProduceItem ] = useState({})
+
+  const [ cart, setCart ] = useState([])
+
+  const[ produceList, setProduceList ] = useState([])
+
+//Initial Get Request
+  useEffect(()=>{
+    fetch('http://localhost:3000/produce')
+    .then(res => res.json())
+    .then(data => setProduceList(data))
+},[])
+
+
+  function addProduce(newProduceObj){
+    setProduceList([...produceList, newProduceObj])
+  }
+
   function handleSelectionClick(produceItem){
       setSelectedProduceItem(produceItem)
   }
-
   // callback function sent to productDisplayPage -> update state (cart)
-  const [ cart, setCart ] = useState([])
-  
+
   function addToCart(orderObj){
       const inCart = cart.find(item => item.name === orderObj.name)
   //check to see if item is already in cart
@@ -55,33 +70,32 @@ function App() {
       <h1>Exotic Farmers Market</h1>
       <Nav />
       <div id="displaySection">
+        <Switch>
 
-<Switch>
+            <Route exact path="/">
+                <Shop handleSelectionClick={handleSelectionClick} produceList={produceList}/>
+            </Route>
 
-    <Route exact path="/">
-        <Shop handleSelectionClick={handleSelectionClick}/>
-    </Route>
+            <Route path="/add-produce">
+                <AddProduce addProduce={addProduce}/>
+            </Route>
 
-    <Route path="/add-produce">
-        <AddProduce />
-    </Route>
+            <Route path="/cart">
+                <Cart cart={cart} updateCart={updateCart}/>
+            </Route>
 
-    <Route path="/cart">
-        <Cart cart={cart} updateCart={updateCart}/>
-    </Route>
+            <Route path="/produce-display-page/:produceName">
+                <ProduceDisplayPage selectedProduceItem={selectedProduceItem} addToCart={addToCart}/>
+            </Route>
 
-    <Route path="/produce-display-page/:produceName">
-        <ProduceDisplayPage selectedProduceItem={selectedProduceItem} addToCart={addToCart}/>
-    </Route>
+            <Route path="/wrap-up">
+                <WrapUp cart={cart} clearCart={clearCart}/>
+            </Route>
 
-    <Route path="/wrap-up">
-        <WrapUp cart={cart} clearCart={clearCart}/>
-    </Route>
-
-</Switch>
-</div>
+        </Switch>
+      </div>
     </div>
-  );
-}
+          );
+        }
 
 export default App;
