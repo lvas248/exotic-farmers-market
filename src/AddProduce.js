@@ -12,7 +12,6 @@ function AddProduce({addProduce}){
     
     function handleSubmit(e){
         e.preventDefault()   
-        console.log(addedProduce)
         fetch('http://localhost:3000/produce',{
             method:"POST",
             headers:{
@@ -39,8 +38,6 @@ function AddProduce({addProduce}){
                     <option>veggie</option>
                 </select>
             </div>
-           
-           
             <button type="submit">Submit</button>
         </form>
     )

@@ -11,10 +11,10 @@ function Table({updateCart, cart}){
         return total + (item.weight * item.price)
     }, 0)
 
-    const renderLineItems = cart.map( item =>{
+    const renderCartItems = cart.map( item =>{
         return <CartItem key={item.name} updateCart={updateCart} lineItem={item}/>
     })
-    
+
     return(
     <table id="table">
         <thead id="head">
@@ -26,7 +26,7 @@ function Table({updateCart, cart}){
             </tr>
         </thead>
         <tbody>
-            {renderLineItems}
+            {renderCartItems}
             <tr>
                 <th></th>
                 <th></th>

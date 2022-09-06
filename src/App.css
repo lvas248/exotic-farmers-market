@@ -112,3 +112,23 @@ table{
   width: 60px;
   margin: auto;
 }
+#confirmation, #wrapUp {
+  text-align: center;
+}
+#confirmation > *, #wrapUp > * {
+  margin: 10px;
+}
+#addProduceForm {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+
+}
+#addProduceForm > * {
+  width: 40%;
+  margin: 20px auto;
+}
+
+#addProduceForm button {
+  width: 60px;
+}
