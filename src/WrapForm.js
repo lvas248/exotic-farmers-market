@@ -7,10 +7,9 @@ function WrapForm({cart, clearCart, handleSetOrderDetails}){
         return total + (element.price * element.weight)
     }, 0 )  
 
-
     const [ userInfo, setUserInfo ] = useState({name:"", pickUpDate: "", pickUpTime: "", notes: "", cart: cart, totalCost: totalPrice})
 
-
+    //Create pickup date options
     const today = new Date()
 
     const fiveDayArray = ["Select Date"]
