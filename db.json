@@ -127,6 +127,14 @@
       "image": "https://www.treehugger.com/thmb/PYjrltAs6R24P7gnq4I_DcIxQmo=/650x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2016__06__oca-1acc849dd3704285863a2ee3c4233f8f.JPG",
       "description": "colorful root vegetable was originally cultivated in the Andes of South America, it is also sometimes called the \"New Zealand yam\" due to its popularity there after being introduced in the mid-1800s. Oca can be difficult to find in North America, but in many parts of South America it is second only to the potato in area planted. It is an excellent source of vitamin C, potassium and iron.",
       "id": 16
+    },
+    {
+      "name": "Kohlrabi",
+      "type": "veggie",
+      "price": "10",
+      "image": "https://images.unsplash.com/photo-1623490439625-758205dc3219?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8a29obHJhYml8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "description": "Kohlrabi is a biennial plant that is usually grown as a cool-season annual. The waxy lobed or wavy leaves emerge from the swollen stem and feature long petioles (leaf stems). The edible stem can be green, white, or purple, depending on the variety.",
+      "id": 17
     }
   ],
   "orders": [
@@ -144,6 +152,66 @@
       ],
       "totalCost": 4,
       "id": 1
+    },
+    {
+      "name": "John",
+      "pickUpDate": "Thu Sep 15",
+      "pickUpTime": "Morning: 10a-12p",
+      "notes": "no notes",
+      "cart": [
+        {
+          "name": "Guava",
+          "price": 2,
+          "weight": 4
+        },
+        {
+          "name": "Kohlrabi",
+          "price": "10",
+          "weight": "1"
+        }
+      ],
+      "totalCost": 18,
+      "id": 2
+    },
+    {
+      "name": "Mike",
+      "pickUpDate": "Thu Sep 15",
+      "pickUpTime": "Evening: 4p-6p",
+      "notes": "n/a",
+      "cart": [
+        {
+          "name": "Guava",
+          "price": 2,
+          "weight": 4
+        },
+        {
+          "name": "Kohlrabi",
+          "price": "10",
+          "weight": "1"
+        }
+      ],
+      "totalCost": 18,
+      "id": 3
+    },
+    {
+      "name": "John",
+      "pickUpDate": "Fri Sep 16",
+      "pickUpTime": "Evening: 4p-6p",
+      "notes": "N/A",
+      "cart": [
+        {
+          "name": "Guava",
+          "price": 2,
+          "weight": 4
+        },
+        {
+          "name": "Kohlrabi",
+          "price": "10",
+          "weight": "1"
+        }
+      ],
+      "totalCost": 18,
+      "id": 4
     }
   ]
 }
