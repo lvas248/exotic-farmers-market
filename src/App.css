@@ -3,7 +3,7 @@
 nav {
   display: flex;
   justify-content: space-around;
-  border: 2px solid navy;
+  border: 2px solid black;
 }
 
 #produceCard {
