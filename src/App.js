@@ -20,7 +20,7 @@ function App() {
 
 //Initial Get Request
   useEffect(()=>{
-    fetch('http://localhost:3000/produce')
+    fetch('https://exotic-db.herokuapp.com/produce')
     .then(res => res.json())
     .then(data => setProduceList(data))
 },[])
