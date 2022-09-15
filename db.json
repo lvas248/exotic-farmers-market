@@ -135,6 +135,14 @@
       "image": "https://images.unsplash.com/photo-1623490439625-758205dc3219?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8a29obHJhYml8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "description": "Kohlrabi is a biennial plant that is usually grown as a cool-season annual. The waxy lobed or wavy leaves emerge from the swollen stem and feature long petioles (leaf stems). The edible stem can be green, white, or purple, depending on the variety.",
       "id": 17
+    },
+    {
+      "name": "Peach",
+      "type": "fruit",
+      "price": "2",
+      "image": "https://www.freepik.com/free-photo/peach-table_6977960.htm#query=peach&position=1&from_view=search",
+      "description": "Sweet, fuzzy, and juicy",
+      "id": 18
     }
   ],
   "orders": [
