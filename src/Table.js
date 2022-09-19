@@ -1,6 +1,6 @@
 import CartItem from "./CartItem"
 
-function Table({updateCart, cart}){
+function Table({updateCart, cart, deleteFromCart}){
     
 
     const totalWeight = cart.reduce((total, item) => {
@@ -12,7 +12,7 @@ function Table({updateCart, cart}){
     }, 0)
 
     const renderCartItems = cart.map( item =>{
-        return <CartItem key={item.name} updateCart={updateCart} lineItem={item}/>
+        return <CartItem key={item.name} updateCart={updateCart} lineItem={item} deleteFromCart={deleteFromCart}/>
     })
 
     return(

@@ -6,6 +6,10 @@ nav {
   border: 2px solid black;
 }
 
+nav a:hover, nav a:active {
+  color: tomato;
+}
+
 #produceCard {
   padding: 40px;
   text-align: center;

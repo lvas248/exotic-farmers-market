@@ -1,7 +1,7 @@
 import { useHistory } from "react-router-dom"
 import Table from "./Table"
 
-function Cart({cart, updateCart}){
+function Cart({cart, updateCart, deleteFromCart}){
 
     const history = useHistory()
 
@@ -20,7 +20,7 @@ function Cart({cart, updateCart}){
   return (
         <div id="cart">
              <h2>Shopping Cart</h2>
-            {cart.length > 0? <Table updateCart={updateCart} cart={cart}/>: <p>Shopping Cart is empty</p>}
+            {cart.length > 0? <Table updateCart={updateCart} cart={cart} deleteFromCart={deleteFromCart}/>: <p>Shopping Cart is empty</p>}
             <button onClick={continueShopping}>Continue Shopping</button>
             <button onClick={handleWrapUp}>Wrap Up</button>
         </div>

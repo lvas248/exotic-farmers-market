@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
 
-function CartItem({lineItem, updateCart}){
+function CartItem({lineItem, updateCart, deleteFromCart}){
 
 //Edit Button state & functionality
     const [ btnClick, setBtnClick ] = useState(false)
+
     function handleEdit(){
         setBtnClick(!btnClick)
     }
     //controlled form for user edits
     const [ updatedWeight, setUpdatedWeight ] = useState(lineItem.weight)
+
     function handleChange(e){
         setUpdatedWeight(e.target.value)
     }
@@ -19,6 +21,7 @@ function CartItem({lineItem, updateCart}){
         setBtnClick(!btnClick)
     }
 
+
     return (
         <>
             <tr id="cartItem">
@@ -27,6 +30,8 @@ function CartItem({lineItem, updateCart}){
                 <td>{btnClick? <input placeholder={lineItem.weight} value={updatedWeight} onChange={handleChange}></input>: lineItem.weight} lbs</td>
                 <td>${lineItem.weight * lineItem.price}.00</td>
                 <td>{btnClick ? <button onClick={handleUpdate}>Update</button> : <button onClick={handleEdit}>Edit</button>}</td>
+                <td><button onClick={()=>deleteFromCart(lineItem)}>Delete</button></td>
+
             </tr>
         </>
     )

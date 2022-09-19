@@ -59,6 +59,14 @@ function App() {
       })
       setCart(updatedCart)
   }
+
+  function deleteFromCart(obj){
+    const updatedCart = cart.filter(item => {
+      return item.name !== obj.name 
+    })
+    setCart(updatedCart)
+  }
+
   function clearCart(){
       setCart([])
   }
@@ -81,7 +89,7 @@ function App() {
             </Route>
 
             <Route path="/cart">
-                <Cart cart={cart} updateCart={updateCart}/>
+                <Cart cart={cart} updateCart={updateCart} deleteFromCart={deleteFromCart}/>
             </Route>
 
             <Route path="/produce-display-page/:produceName">
