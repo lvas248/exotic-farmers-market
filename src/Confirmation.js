@@ -1,7 +1,6 @@
 
 
 function Confirmation({orderDetails}){
-    console.log(orderDetails)
     return (
     <div id="confirmation">
         <h1>Confirmation Details</h1>

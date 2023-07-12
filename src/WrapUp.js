@@ -8,7 +8,6 @@ function WrapUp({cart, clearCart}){
     const [ orderDetails, setOrderDetails ] = useState({})
 
     function handleSetOrderDetails(obj){
-        console.log(obj)
         setOrderDetails(obj)
         setSubmitClick(!submitClick)
     }
