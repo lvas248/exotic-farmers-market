@@ -28,7 +28,7 @@ function WrapForm({cart, clearCart, handleSetOrderDetails}){
 
     function handleSubmit(e){
         e.preventDefault()
-        fetch('https://exotic-db.herokuapp.com/orders',{
+        fetch('https://exotic-db.onrender.com/orders',{
             method: "POST",
             headers: {
                 "Content-type":"application/json",

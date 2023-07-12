@@ -12,7 +12,7 @@ function AddProduce({addProduce}){
     
     function handleSubmit(e){
         e.preventDefault()   
-        fetch('https://exotic-db.herokuapp.com/produce',{
+        fetch('https://exotic-db.onrender.com/produce',{
             method:"POST",
             headers:{
                 "Content-type":"application/json"
