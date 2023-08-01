@@ -4,6 +4,8 @@
 
 Exotic Farmers Market is a web application that allows the user to search and filter through a database of exotic fruits, add them to their cart for purchase and pick up on location.  It also provides allows the user to add an exotic fruit or vegetable to the database.
 
+Walkthrough video: https://youtu.be/577FqLe0aDI
+Demo: https://exotic-farmers-market.onrender.com
   
 
 ## Badges
